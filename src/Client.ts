@@ -78,11 +78,14 @@ import {
   oauthToken,
 } from "./api-endpoints"
 import nodeFetch from "node-fetch"
-import {
-  version as PACKAGE_VERSION,
-  name as PACKAGE_NAME,
-} from "../package.json"
+// import {
+//   version as PACKAGE_VERSION,
+//   name as PACKAGE_NAME,
+// } from "../package.json" 
 import { SupportedFetch } from "./fetch-types"
+
+const PACKAGE_VERSION = "2.2.15"
+const PACKAGE_NAME = "@schickling/notion-client"
 
 export interface ClientOptions {
   auth?: string

@@ -1,4 +1,4 @@
-import { Client } from "@notionhq/client"
+import { Client } from "@schickling/notion-client"
 import { config } from "dotenv"
 
 config()

@@ -7,7 +7,7 @@
 
 ================================================================================ */
 
-import { Client } from "@notionhq/client"
+import { Client } from "@schickling/notion-client"
 import { config } from "dotenv"
 import SendGrid from "@sendgrid/mail"
 import { PropertyItemObjectResponse } from "../../build/src/api-endpoints"
