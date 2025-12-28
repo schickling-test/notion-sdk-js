@@ -33,7 +33,7 @@
     "_prepublishOnly": "npm run checkLoggedIn && npm run lint && npm run test",
     "build": "tsc",
     "prettier": "prettier --write .",
-    "lint": "prettier --check . && eslint . --ext .ts && cspell '**/*' ",
+    "lint": "prettier --check . && ESLINT_USE_FLAT_CONFIG=false eslint . --ext .ts && cspell '**/*' ",
     "test": "jest ./test",
     "check-links": "git ls-files | grep md$ | xargs -n 1 markdown-link-check",
     "prebuild": "npm run clean",
@@ -47,19 +47,19 @@
     "build/**"
   ],
   "dependencies": {
-    "@types/node-fetch": "^2.5.10",
-    "node-fetch": "^2.6.1"
+    "@types/node-fetch": "^2.6.13",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
-    "@types/jest": "^28.1.4",
-    "@typescript-eslint/eslint-plugin": "^5.39.0",
-    "@typescript-eslint/parser": "^5.39.0",
-    "cspell": "^5.4.1",
-    "eslint": "^7.24.0",
-    "jest": "^28.1.2",
-    "markdown-link-check": "^3.8.7",
-    "prettier": "^2.8.8",
-    "ts-jest": "^28.0.5",
-    "typescript": "^5.6.3"
+    "@types/jest": "^30.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.50.1",
+    "@typescript-eslint/parser": "^8.50.1",
+    "cspell": "^9.4.0",
+    "eslint": "^9.39.2",
+    "jest": "^30.2.0",
+    "markdown-link-check": "^3.14.2",
+    "prettier": "^3.7.4",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.9.3"
   }
 }
